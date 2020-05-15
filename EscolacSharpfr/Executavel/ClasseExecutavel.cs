@@ -14,8 +14,12 @@ namespace EscolacSharpfr.Executavel
                 Aluno aluno = new Aluno();
 
                 aluno.setNome("francisco");
+                aluno.setNota1(90);
+                aluno.setNota2(70);
+                aluno.setNota3(85);
 
                 Console.WriteLine(aluno.getNome());
+                Console.WriteLine(aluno.getMediaNota());
             }
         }
 

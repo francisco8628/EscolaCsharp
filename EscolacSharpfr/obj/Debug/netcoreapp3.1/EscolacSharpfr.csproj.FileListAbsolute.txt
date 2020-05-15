@@ -1,0 +1,11 @@
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\bin\Debug\netcoreapp3.1\EscolacSharpfr.exe
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\bin\Debug\netcoreapp3.1\EscolacSharpfr.deps.json
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\bin\Debug\netcoreapp3.1\EscolacSharpfr.runtimeconfig.json
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\bin\Debug\netcoreapp3.1\EscolacSharpfr.runtimeconfig.dev.json
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\bin\Debug\netcoreapp3.1\EscolacSharpfr.dll
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\bin\Debug\netcoreapp3.1\EscolacSharpfr.pdb
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\obj\Debug\netcoreapp3.1\EscolacSharpfr.AssemblyInfoInputs.cache
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\obj\Debug\netcoreapp3.1\EscolacSharpfr.AssemblyInfo.cs
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\obj\Debug\netcoreapp3.1\EscolacSharpfr.dll
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\obj\Debug\netcoreapp3.1\EscolacSharpfr.pdb
+C:\Workspace-c#-aplicativos\EscolacSharpfr\EscolacSharpfr\obj\Debug\netcoreapp3.1\EscolacSharpfr.csprojAssemblyReference.cache

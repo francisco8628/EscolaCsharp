@@ -10,11 +10,33 @@ namespace EscolacSharpfr.Classes
 
         private int idade;
 
-        private string Materia;
+        private string Materia1;
+		private string Materia2;
+		private string Materia3;
 
 		private double nota1;
 		private double nota2;
 		private double nota3;
+
+		public String getMateria2()
+		{
+			return Materia2;
+		}
+
+		public void setMateria2(String materia2)
+		{
+			Materia2 = materia2;
+		}
+
+		public String getMateria3()
+		{
+			return Materia3;
+		}
+
+		public void setMateria3(String materia3)
+		{
+			Materia3 = materia3;
+		}
 
 		public double getNota1()
 		{
@@ -68,12 +90,12 @@ namespace EscolacSharpfr.Classes
 
 		public String getMateria()
 		{
-			return Materia;
+			return Materia1;
 		}
 
 		public void setMateria(String materia)
 		{
-			Materia = materia;
+			Materia1 = materia;
 		}
 
 		public double getMediaNota()
@@ -82,6 +104,30 @@ namespace EscolacSharpfr.Classes
 			return (nota1 + nota2 + nota3) / 3;
 		}
 
+		public Boolean getAprovado()//se tiver aprovado
+		{
+
+			double media = getMediaNota();
+
+			if (media >= 70)
+			{
+
+				return true;
+
+			}
+			else
+			{
+				return false;
+			}
+
+		}
+
+		public override string ToString()
+		{
+			return  "Aluno [nome=" + nome + ", idade=" + idade + ", Materia1=" + Materia1 + ", Materia2=" + Materia2
+				+ ", Materia3=" + Materia3 + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + "]";
+
+		}
 
 	}
 }

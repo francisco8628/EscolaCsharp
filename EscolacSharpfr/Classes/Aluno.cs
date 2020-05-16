@@ -10,21 +10,17 @@ namespace EscolacSharpfr.Classes
 
         private int idade;
 
-		private Materia materia = new Materia();
+		List<Materia> materias = new List<Materia>();
 
-		public Materia getMateria()
+		public List<Materia> getMaterias()
 		{
-			return materia;
+			return materias;
 		}
 
-		public void setMateria(Materia materia)
+		public void setMaterias(List<Materia> materias)
 		{
-			this.materia = materia;
+			this.materias = materias;
 		}
-
-
-
-
 
 		public String getNome()
 		{
@@ -50,8 +46,16 @@ namespace EscolacSharpfr.Classes
 
 		public double getMediaNota()
 		{
+			double media = 0;
+			int size = 0;
+			foreach(Materia materia in materias)
+			{
 
-			return (materia.getNota1() + materia.getNota2()+ materia.getNota3()) / 3;
+				media += +materia.getNota();
+				size++;
+			}
+
+			return media / size;
 		}
 
 		public Boolean getAprovado()//se tiver aprovado

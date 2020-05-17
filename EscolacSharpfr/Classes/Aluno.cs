@@ -51,7 +51,7 @@ namespace EscolacSharpfr.Classes
 			foreach(Materia materia in materias)
 			{
 
-				media += +materia.getNota();
+				media += materia.getMediaMateria();
 				size++;
 			}
 

@@ -17,18 +17,24 @@ namespace EscolacSharpfr.Executavel
                 Console.WriteLine("digite a quantidade de materias do aluno");
                 string qtd = Console.ReadLine();
 
-                for (int i = 1; i <= Convert.ToInt32(qtd); i++)
+                for (int i = 1; i <= Convert.ToInt32(qtd); i++)//seta materia
                 {
                     Materia materia = new Materia();
                     Console.WriteLine("digite o nome da Materia: " + i);
-                    string nome = Console.ReadLine();
+                    string nomeMateria = Console.ReadLine();
+                    materia.setMateria(nomeMateria);
 
-                    Console.WriteLine("digite a nota : " + i);
-                    string nota = Console.ReadLine();
+                    double[] notas = new double[2];
+                    for (int x = 0; x < 2; x++)  //seta nota
+                    {
+                        Console.WriteLine("digite a nota : " + (x+1));
+                        string nota = Console.ReadLine();
+                        notas[x] = Convert.ToDouble(nota);                   
 
-                    materia.setMateria(nome);
-                    materia.setNota(Double.Parse(nota));
+                    
+                    materia.setNota(notas);
 
+                    }
                     aluno.getMaterias().Add(materia);
                 }
 
@@ -53,12 +59,15 @@ namespace EscolacSharpfr.Executavel
                     }
                 }//fim if remove
 
-                for (int i = 0; i < Convert.ToInt32(qtd); i++)
+                
+                foreach (Materia m in aluno.getMaterias())
                 {
-                    List<Materia> materias = aluno.getMaterias();
+                  
 
-                    Console.WriteLine(" A Materia : "+materias[i].getMateria());
-                    Console.WriteLine(" tem Nota: " + materias[i].getNota());
+                    Console.WriteLine(" A Materia : "+m.getMateria());
+
+                    for(int a = 0; a < 2; a++)
+                    Console.WriteLine(" tem Nota: " + m.getNota()[a]);
                     
                 }
 
